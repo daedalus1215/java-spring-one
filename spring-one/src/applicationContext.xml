@@ -14,11 +14,20 @@
 		  
 	
 	<bean id="myFortuneService"
-			class ="spring.one.Fortune.Service.HappyFortuneService"></bean>
-			
+			class ="spring.one.Fortune.Service.HappyFortuneService">
+	</bean>
+	
+	<!-- Constructor injection -->			
 	<bean id="myCoach"
 		  class="spring.one.Coach.BaseballCoach">
-		  	<constructor-arg ref="myFortuneService"/>
-		  
-		  </bean>			
+		  	<constructor-arg ref="myFortuneService"/>		  
+    </bean>
+    
+    <!-- Setter injection -->
+    <bean id="myCricketCoach"
+    	  class="spring.one.Coach.CricketCoach">
+    	  
+    	  <property name="fortuneService" ref="myFortuneService"/>
+    </bean>  
+    			
 </beans>
