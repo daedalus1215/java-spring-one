@@ -12,6 +12,6 @@
 
 
 	<bean id="myCoach"
-		  class="spring.one.TrackCoach"></bean>	  
+		  class="spring.one.HockeyCoach"></bean>	  
 	
 </beans>
