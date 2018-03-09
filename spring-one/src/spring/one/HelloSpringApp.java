@@ -2,6 +2,8 @@ package spring.one;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import spring.one.Coach.CoachInterface;
+
 public class HelloSpringApp {
 
 	public static void main(String[] args) {

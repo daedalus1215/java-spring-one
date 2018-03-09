@@ -1,4 +1,4 @@
-package spring.one;
+package spring.one.Coach;
 
 public interface CoachInterface {
 

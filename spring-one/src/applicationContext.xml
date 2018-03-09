@@ -11,7 +11,14 @@
 >
 
 
-	<bean id="myCoach"
-		  class="spring.one.HockeyCoach"></bean>	  
+		  
 	
+	<bean id="myFortuneService"
+			class ="spring.one.Fortune.Service.HappyFortuneService"></bean>
+			
+	<bean id="myCoach"
+		  class="spring.one.Coach.BaseballCoach">
+		  	<constructor-arg ref="myFortuneService"/>
+		  
+		  </bean>			
 </beans>
