@@ -3,17 +3,18 @@ package spring.one;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import spring.one.Coach.CoachInterface;
+import spring.one.Coach.CricketCoach;
 
-public class HelloSpringApp {
+public class SetterDemoApp {
 
 	public static void main(String[] args) {
-		// load the spring config file
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		// retrieve bean from spring container
-		CoachInterface theCoach = context.getBean("myCoach", CoachInterface.class);
-		// call methods on the bean
+		
+		CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
+		
 		System.out.println(theCoach.getDailyWorkout());
-		// close the context
+		System.out.println("Email address of coach: " + theCoach.getEmailAddress());
+		System.out.println("Team is: " + theCoach.getTeam());
 		context.close();
 	}
 
