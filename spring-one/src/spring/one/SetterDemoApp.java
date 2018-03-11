@@ -17,5 +17,4 @@ public class SetterDemoApp {
 		System.out.println("Team is: " + theCoach.getTeam());
 		context.close();
 	}
-
 }
