@@ -4,3 +4,4 @@
 /beanScopeApplicationContext.xml
 /beanScope-applicationContext.out.xml
 /beanLifeCycle-applicationContext.xml
+/componentScan-applicationContext2.xml
