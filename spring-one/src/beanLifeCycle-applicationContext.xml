@@ -17,7 +17,8 @@
 	    <!-- Setter injection -->
     <bean id="myCoach" 
     class="spring.one.Coach.TrackCoach"
-    scope="prototype">    	  
+   	init-method="doMyStartupStuff"
+	destroy-method="doMyDestroyStuff">    	  
 <!-- 		<constructor-arg ref="myFortuneService" /> -->  
    	  
     </bean>
