@@ -1,2 +1,5 @@
 /spring/
 /sport.properties
+/beanScope-applicationContext.xml
+/beanScopeApplicationContext.xml
+/beanScope-applicationContext.out.xml
